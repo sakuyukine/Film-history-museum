@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*使页面占据整个屏幕*/
+*{margin:0 auto;}
+/*顶部导航div框样式*/
+.naviContainer{
+	width:100%;
+	height:60px;
+	background-color:#FFFFFF;
+	position:fixed;
+	min-width:1400px;
+	/*overflow:hidden;*//*用了下拉菜单就显示不出来了，所以更改后将他注释掉*/
+}
+/*设置导航栏样式*/
+ul li{
+	float:left;
+	list-style:none;
+	width:200px;
+	height:60px;
+	border-left:1px solid #ccc;
+	text-align:center;
+	line-height:50px;
+	background: #FFFFFF;
+}
+/*对顶部导航的样式修改*/
+ul li a{
+	color:#000000;
+	text-decoration:none;
+	display:block;
+	text-transform:uppercase;
+}
+/*鼠标放上去变色*/
+ul li a:hover{
+	color:#9D9D9D;
+}
+/*点击后字体变黑色*/
+ul li a:active{
+	color:#FFFFFF;
+}
+/*下拉菜单设置*//*新增*/
+.naviContainer ul li ul{
+	padding-left:0px;
+	margin-top:10px;
+}
+.naviContainer ul li ul li{
+	display:none;
+	width:200px;
+	height:50px;
+	float:initial;
+	text-align:center;
+}
+.naviContainer ul li:hover ul li{
+	display:block;
+}		
+.naviContainer ul li:hover{
+	background:#011B42;
+	width:200px;
+	height:60px;
+}
+/*背景内容设置*/
+.backgroundContainer{
+	width:100%;
+	height:750px;
+	background:url(../img/Background.jpg);
+}
+/*无表单边框*/
+fieldset{
+	border:none;
+}
+.search input{
+	height:30px;
+	text-align:center;
+}
+/*定位：居导航栏右侧*/
+.search{
+	position:absolute;
+	left:79.2%;
+	top:9px;
+}
+/*提交按钮样式*/
+.goBtn{
+	background-color: #5C5C5C;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 2px 2px 2px #333;
+	color: #FFFFFF;
+	padding: 6px 6px;
+	text-shadow: 1px 1px 0px #777;
+	cursor: pointer;/*光标呈现为指示链接的指针（一只手）*/
+}
+/*文本内容框设置*/
+.textContainer{
+	width:600px;
+	margin-right:110px;
+	margin-top:500px;
+	float:right;
+}
+/*文字样式设置*/
+p{
+	color:#FFFFFF;
+	text-indent:0px;
+	line-height:50px;
+	font-size:17px;
+}
+/*图片位置设置*/
+.picContainer{
+	padding-top:200px;
+}
+/*当前页面字体加粗标识*//*新增*/
+.bold{
+	font-weight:bold;
+}
+

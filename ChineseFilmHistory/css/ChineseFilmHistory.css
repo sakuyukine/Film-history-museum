@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/** 覆盖默认样式 **/
+body{
+	/* center page in the browser */
+	width: 100%;
+	margin: 0 auto;
+	}/*框架-居中*/
+footer{
+	position: relative;
+	top:40px;
+}
+ul li{
+	float:left;
+	list-style:none;
+	width:200px;
+	height:60px;
+	border-left:1px solid #ccc;
+	line-height: 50px;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+h2{
+	padding: 133px;
+	text-align: center;
+	clear: both;
+	display: block;
+	font-size:40px;
+	letter-spacing: 4px;
+	color:#FFFFFF;
+	font-family: "宋体";
+}/*文章标题样式*/
+h2+div{
+	width:50%;
+	box-sizing: border-box;
+	padding:1em 1em 0em 1em;
+	min-height: 816px;
+}/*简介文字盒子样式*/
+h3{
+	text-align: center;
+	font-size:22px;
+	letter-spacing: 2px;
+}/*简介文字标题样式*/
+main p{
+	box-sizing: border-box;
+	padding: 0em 0.5em 0em 1em;
+	letter-spacing: 3px;
+	line-height: 2em;
+	text-indent: 2em;	
+}/*简介文字段落样式*/
+img{
+	display: block;
+	margin:0em 0em 2.5em;
+	border: 3px solid #A9A9A9;
+}/*所有图片样式*/
+
+
+/** 导航栏链接 **/
+.naviContainer{
+	margin-top:-49px;
+	width: 100%;
+	height:76px;
+	background-color: #FFFFFF;
+	position:fixed;
+	z-index: 5;
+}
+ul a:link{
+	color:#000000;
+	text-decoration: none;}
+ul a:visited{
+	color:#000000;
+	text-decoration: none;
+}
+ul a:hover{
+	color:#9D9D9D;
+	text-decoration: none;
+}
+ul a:active{
+	color:#FFFFFF;
+	text-decoration: none;
+}
+.bold{
+	font-weight:bold;
+}/*当前页面字体加粗标识*//*新增*/
+
+
+/** 下拉菜单样式 **/
+.naviContainer ul li ul{
+	padding-left:0px;
+	margin-top:10px;
+}
+.naviContainer ul li ul li{
+	display:none;
+	width:200px;
+	height:50px;
+	float:initial;
+	text-align:center;
+}
+.naviContainer ul li:hover ul li{
+	display:block;
+}
+.naviContainer ul li:hover{
+	background:#011B42;
+	width:200px;
+	height:60px;
+}
+
+
+/** 搜索框样式 **/
+.search{
+	/*float:right;*/
+	position:absolute;
+	left:80%;
+	top:25px;
+}/*定位：居导航栏右侧*/
+fieldset{
+	border: none;
+}/*无表单边框*/
+.search input{
+	height: 30px;
+	text-align: center;
+}
+.goBtn{
+	background-color: #5C5C5C;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 2px 2px 2px #333;
+	color: #FFFFFF;
+	padding: 6px 6px;
+	text-shadow: 1px 1px 0px #777;
+	cursor: pointer;/*光标呈现为指示链接的指针（一只手）*/
+}/*提交按钮样式*/
+
+
+
+/** 早期电影 **/
+.firstStage h2{
+	background:url(../img/background.jpg) no-repeat;
+	background-size:100% 100%;
+	height:160px;
+}/*早期电影时期的文章背景样式*/
+.firstIntro {
+	display: inline-block;
+	position: relative;
+	left:8%;
+	background:#F0F0F0;
+}/*早期的电影时期的简介文字盒子样式*/
+.firstSample{
+	width:20%;
+	max-height: 840px;
+	box-sizing: border-box;
+	padding: 1em;
+	float:right;
+	position: relative;
+	left:-8%;
+}/*早期电影时期的图片盒子样式*/
+.firstSample img{
+	position: relative;
+	top:-16px;
+}/*早期电影时期图片位置调整*/
+
+
+
+/** 十七年时期的电影 **/
+.secondStage h2{
+	background: url(../img/background2.jpg) no-repeat;
+	background-size:100% 100%;
+	height:160px;
+}/*十七年时期的电影的文章背景样式*/
+.secondIntro{
+	float:right;
+	position: relative;
+	left: -8%;
+	background:#F0F0F0;
+}/*十七年时期的电影的简介文字盒子样式*/
+.secondSample{
+	width:20%;
+	max-height: 840px;
+	box-sizing: border-box;
+	padding: 1em;
+	position: relative;
+	left: 16%
+}/*十七年时期的电影的图片盒子样式*/
+.secondSample img{
+	position: relative;
+	top:-16px;
+}/*十七年时期的电影的图片位置调整*/
+
+
+
+/**新时期电影**/
+.thirdStage h2{
+	background:url(../img/background3.jpg) no-repeat;
+	background-size:100% 100%;
+	height:160px;
+}/*新时期电影的文章背景样式*/
+.thirdIntro{
+	display: inline-block;
+	position: relative;
+	left: 8%;
+	background:#F0F0F0;
+}/*新时期电影的简介文字盒子样式*/
+.thirdSample{
+	width:20%;
+	max-height: 840px;
+	box-sizing: border-box;
+	padding: 1em;
+	float:right;
+	position: relative;
+	left:-8%;
+}/*新时期电影的图片盒子样式*/
+.thirdSample img{
+	position: relative;
+	top:-16px;
+}/*新时期电影的图片位置调整*/
+
+.footerContainer{
+	margin: 2em 0;
+	text-align: center;
+}
+.footerContainer p{
+	font-size:13px;
+	letter-spacing:3px;
+	line-height:35px;
+	text-align:center;
+	font-family:wellfleet;
+}
+

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<title>登录</title>
+	<link rel="stylesheet" href="css/LogIn.css"/>
+</head>
+
+<body>
+	<div class="backgroundContainer">
+		<!--具体登录内容-->
+		<div class="fields">
+			<h2>用户登录</h2>
+			<fieldset>
+				<form method="post">
+					<div class="row">
+						<label for="account">
+							<img src="img/account.png" alt="账户">
+						</label>
+						<input type="text" id="account" name="account" required="required" aria-required="true"/>
+					</div>
+					<div class="row">
+						<label for="password">
+							<img src="img/password.png" alt="密码">
+						</label>
+						<input type="password" id="password" name="password" required="required" aria-required="true" autocomplete="off"/>
+					</div>
+					<input type="submit" value="登录" class="logBtn">
+				</form>
+			</fieldset>
+			<p class="text">
+					<!--忘记密码和注册用户还没有添加相关信息，仅做摆设，使网页看起来完整-->
+				<a href="LogIn.html">忘记密码?</a>
+				<a href="LogIn.html">注册用户</a>
+			</p>
+			<p class="back">
+				<a href="../index.html">返回首页</a>
+			</p>	
+			
+		</div>
+	</div>
+</body>
+</html>

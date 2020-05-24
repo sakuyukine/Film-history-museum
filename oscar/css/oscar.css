@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0 auto;}
+/*顶部导航div框样式*/
+.naviContainer{
+	width:100%;
+	height:60px;
+	background-color:#FFFFFF;
+	position:fixed;
+	z-index:2;
+}
+/*设置导航栏背景颜色、文字边框、字体颜色*/
+ul li{
+	float:left;
+	list-style:none;
+	width:200px;
+	height:40px;
+	border-left:1px solid #ccc;
+	text-align:center;
+	line-height:50px;
+	background: #FFFFFF;
+}
+/*对顶部导航的样式修改*/
+ul li a{
+	color:#000000;
+	text-decoration:none;
+	display:block;
+}
+/*鼠标放上去变色*/
+ul li a:hover{
+	color:#9D9D9D;
+}
+/*点击后字体变色*/
+ul li a:active{
+	color:#FFFFFF;
+}
+/*下拉菜单设置*/
+.naviContainer ul li ul{
+	padding-left:0px;
+	margin-top:10px;
+}
+.naviContainer ul li ul li{
+	display:none;
+	width:200px;
+	height:50px;
+	float:initial;
+	text-align:center;
+}
+.naviContainer ul li:hover ul li{
+	display:block;
+}		
+.naviContainer ul li:hover{
+	background:#011B42;
+	width:200px;
+	height:60px;
+}
+/*无表单边框*/
+fieldset{
+	border:none;
+}
+.search input{
+	height:30px;
+	text-align:center;
+}
+/*定位：居导航栏右侧*/
+.search{
+	position:absolute;
+	left:80.1%;
+	top:9px;
+}
+/*提交按钮样式*/
+.goBtn{
+	background-color: #5C5C5C;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 2px 2px 2px #333;
+	color: #FFFFFF;
+	padding: 6px 6px;
+	text-shadow: 1px 1px 0px #777;
+	cursor: pointer;
+}
+/*正文框*/
+.mainContainer{
+	margin:0 auto;
+	padding:40px;
+	position:relative;
+	overflow:hidden;
+}
+/*标题格式*/
+h1{
+	font-size:30px;
+	text-align:center;
+	margin:0 auto;
+	padding:30px;
+	margin-top:30px;
+	color:#FFFFFF;
+	letter-spacing:10px;
+}
+/*当前页面字体加粗标识*/
+.bold{
+	font-weight:bold;
+}
+.firstContainer{
+	float:left;
+	padding:30px;
+	overflow:hidden;
+	}
+.secondContainer{
+	float:left;
+	padding:30px;
+	overflow:hidden;
+}
+.firstPicture{
+	margin:0 auto;
+	padding:10px;
+}
+.picContainer{
+	width:1200px;
+	margin-left:160px;
+	overflow:hidden;
+}
+.figcaption{
+	text-align:left;
+	text-indent:2em;
+	font-size:15px;
+	letter-spacing:4px;
+	font-weight:bold;
+	font-family:kaiti;
+	width:200px;
+	color:#FFFFFF;
+}/*图片注释*/
+.asideContainer{
+	background-color:#000000;
+	text-align:center;
+	padding:10px;
+}/*附注框*/
+.asideText{
+	font-family:kaiti;
+	font-size:13px;
+	color:#938989;
+	line-height:20px;
+	letter-spacing:3px;
+}/*附注文本*/
+.footerContainer{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	background-color:#F3F3F3;
+	padding-bottom:20px;
+}/*脚注框*/
+.footerText{
+	font-size:13px;
+	letter-spacing:3px;
+	line-height:35px;
+	text-align:center;
+	font-family:wellfleet;
+}/*脚注文本*/
+.background{
+	background:url(../img/Background.jpeg);
+}

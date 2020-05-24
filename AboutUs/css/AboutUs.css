@@ -1,0 +1,218 @@
+*{margin:0 auto;}
+
+.container{
+	margin:0 0px;
+}/*设置大框*/
+			
+.naviContainer{
+	width:100%;
+	height:60px;
+	background-color:#FFFFFF;
+	/*overflow:hidden;*/
+	position:fixed;
+}
+/*设置导航栏样式*/
+			
+.naviContainer ul li{
+	float:left;
+	list-style:none;
+	width:200px;
+	height:60px;
+	border-left:1px solid #ccc;
+	text-align:center;
+	line-height:50px;
+	padding-top:0px;
+	background: #FFFFFF;
+}
+/*对顶部导航的样式修改*/
+			
+.naviContainer ul li a{
+	color:#000000;
+	text-decoration:none;
+	display:block;
+}
+/*鼠标放上去变色*/
+			
+.naviContainer ul li a:hover{
+	color:#9D9D9D;
+}
+/*点击后字体变黑色*/
+			
+.naviContainer ul li a:active{
+	color:#FFFFFF;
+}
+/*下拉菜单设置*//*新增*/
+			
+.naviContainer ul li ul{
+	padding-left:0px;
+	margin-top:10px;
+}
+			
+.naviContainer ul li ul li{
+	display:none;
+	width:200px;
+	height:50px;
+	float:initial;
+	text-align:center;
+}
+			
+.naviContainer ul li:hover ul li{
+	display:block;
+}		
+			
+.naviContainer ul li:hover{
+	background:#011B42;
+	width:200px;
+	height:60px;
+}
+/*正文文本标题样式*/
+			
+.home{
+	font-size:26px;
+	width:200px;
+}/*设置首页字体*/
+/*无表单边框*/
+			
+fieldset{
+	border:none;
+}
+			
+.search input{
+	height:30px;
+	text-align: center;
+}
+/*定位：居导航栏右侧*/
+			
+.search{
+	position:absolute;
+	left:80.1%;
+	top:9px;
+}
+/*提交按钮样式*/
+			
+.goBtn{
+	background-color: #5C5C5C;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 2px 2px 2px #333;
+	color: #FFFFFF;
+	padding: 6px 6px;
+	text-shadow: 1px 1px 0px #777;
+	cursor:pointer;
+}
+/*当前页面字体加粗标识*//*新增*/
+			
+.bold{
+	font-weight:bold;
+}
+ /*.headerIcon{
+	float:right;
+	margin-top:5px;
+	margin-right:80px;
+}*//*搜索图标*/
+			
+.mainContainer{
+	background-color:#000000;
+	overflow:hidden;
+	padding:60px;
+}/*设置主体框*/
+			
+.mainCaption{
+	color:#FFFFFF;
+	text-align:center;
+	letter-spacing:6px;
+	margin-top:50px;
+	font-family:kaiti;
+	font-weight:bold;
+}/*设置主体标题*/
+			
+.mainfirstWord{
+	font-size:20px;
+	text-align:left;
+	color:#FFFFFF;
+	margin-left:130px;
+	margin-top:40px;
+	letter-spacing:5px;
+	font-family:kaiti;
+	font-weight:bold;
+}/*设置主体下一级字体*/
+			
+.mainsecondWord{
+	font-size:16px;
+	text-align:left;
+	color:#FFFFFF;
+	margin-left:130px;
+	margin-top:40px;
+	letter-spacing:5px;
+	font-family:kaiti;
+}/*设置主体普通字体*/
+			
+.mainPicture{
+	float:right;
+	padding-bottom:60px;
+	padding-right:50px;
+}/*设置主体图片*/
+			
+.asideContainer{
+	overflow:hidden;
+	padding:30px;
+}/*设置附注框*/
+			
+.asideCaption{
+	color:#000000;
+	text-align:center;
+	letter-spacing:6px;
+	margin-top:30px;
+	font-family:kaiti;
+	font-weight:bold;
+	font-size:25px;
+}/*设置附注标题*/
+			
+.webbigContainer{
+	list-style:none;
+}/*设置推荐网站框*/
+			
+.webContainer{
+	float:left;
+	padding:10px;
+	display:inline;
+}/*设置单个网站框*/
+			
+.webPicture{
+	margin:0 auto;
+	padding:10px;
+}/*设置网站图*/
+			
+.webWord{
+	text-align:center;
+	font-size:15px;
+	letter-spacing:4px;
+	font-weight:bold;
+	font-family:kaiti;
+}/*设置网站字体*/
+			
+.picContainer{
+	width:800px;
+	margin-left:350px;
+}/*设置网站图片框*/
+			
+.picContainer ul li a{
+	text-decoration:none;
+	color:#000000;
+	font-family:wellfleet;
+}/*设置网站链接*/
+			
+.footerContainer{
+	overflow:hidden;
+	padding:20px;
+	background-color:#000000;
+}/*设置脚注框*/
+			
+.footerWord{
+	font-size:13px;
+	text-align:center;
+	color:#FFFFFF;
+	letter-spacing:3px;
+	line-height:35px;
+	font-family:wellfleet;
+}/*设置脚注文字*/
